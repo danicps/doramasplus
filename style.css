@@ -1,0 +1,124 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+  margin: 0;
+}
+
+header, footer {
+  text-align: center;
+  padding: 15px;
+}
+
+#planos {
+  text-align: center;
+}
+
+.plano {
+  width: 90%;
+  max-width: 300px;
+  margin: 10px auto;
+  padding: 15px;
+  font-size: 18px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  background: #e0e0e0;
+}
+
+.plano.destaque {
+  background: #ffe082;
+  font-weight: bold;
+}
+
+.aviso {
+  font-size: 15px;
+}
+
+#contador {
+  font-size: 18px;
+  margin: 10px;
+  text-align: center;
+}
+
+#catalogo {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 12px;
+  padding: 15px;
+}
+
+.card {
+  background: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  text-align: center;
+}
+
+.card.selecionado {
+  border-color: #2ecc71;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 6px;
+}
+
+.card h3 {
+  font-size: 16px;
+}
+
+.card button {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+footer button {
+  width: 90%;
+  max-width: 300px;
+  padding: 15px;
+  font-size: 18px;
+  border-radius: 10px;
+  border: none;
+  margin: 8px auto;
+}
+
+#finalizar {
+  background: #2ecc71;
+  color: #fff;
+}
+
+.secundario {
+  background: #ddd;
+}
+
+/* MODAL */
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.modal-conteudo {
+  background: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+}
+

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doramas Plus</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="script.js">
+</head>
+<body>
+
+<!-- MODAL BOAS VINDAS -->
+<div id="boas-vindas" class="modal">
+  <div class="modal-conteudo">
+    <h2>👋 Bem-vindo!</h2>
+    <ol>
+      <li>Escolha um plano</li>
+      <li>Escolha seus doramas (pode escolher depois)</li>
+      <li>Finalize no WhatsApp para pagar</li>
+    </ol>
+    <p>📆 Todos os planos têm <strong>30 dias</strong></p>
+    <button id="btn-entendi">ENTENDI, QUERO COMEÇAR</button>
+  </div>
+</div>
+
+<!-- MODAL SINOPSE -->
+<div id="modal-sinopse" class="modal" style="display:none;">
+  <div class="modal-conteudo">
+    <h2 id="titulo-sinopse"></h2>
+    <p id="texto-sinopse"></p>
+    <button id="fechar-sinopse">Fechar</button>
+  </div>
+</div>
+
+<header class="topo">
+  <img src="images/logo.png" alt="Doramas Plus+" class="logo">
+  <h1>Oii, amor! 😊❤️
+      Vem escolher seu plano hoje </h1>
+</header>
+
+<section id="planos">
+  <button class="plano" data-limite="2" data-preco="15">2 doramas<br><strong>R$ 15</strong></button>
+  <button class="plano" data-limite="6" data-preco="30">6 doramas<br><strong>R$ 30</strong></button>
+  <button class="plano" data-limite="12" data-preco="50">12 doramas<br><strong>R$ 50</strong></button>
+  <button class="plano destaque" data-limite="20" data-preco="80">⭐ 20 doramas<br><strong>R$ 80</strong></button>
+
+  <p class="aviso">
+    Você pode escolher todos agora ou voltar depois dentro dos 30 dias.
+  </p>
+</section>
+
+<p id="contador">Escolha um plano para começar</p>
+
+<main id="catalogo"></main>
+
+<footer>
+  <button id="finalizar">Finalizar no WhatsApp</button>
+  <button id="ajuda" class="secundario">Não encontrei / Preciso de ajuda</button>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
+
